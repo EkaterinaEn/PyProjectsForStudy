@@ -1,6 +1,6 @@
 example = 'Ekaterina'
 print(example[0])
 print(example[-1])
-print(example[4:9])
+print(example[int(len (example)/2):len (example)])
 print(example[::-1])
-print(example[1:9:2])
+print(example[1::2])
