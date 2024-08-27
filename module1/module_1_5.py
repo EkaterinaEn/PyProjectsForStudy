@@ -1,5 +1,7 @@
 immutable_var = 1, 2, 3, True, 'Ekaterina'
 print(immutable_var)
+#immutable_var[5] = 'Sofia'
+#print(immutable_var) кортеж не поддерживает обращение по элементам
 mutable_list = ['межевой план', 'кадастровый план', 'акт обследования']
 print(mutable_list)
 mutable_list[1] = 'технический план'
