@@ -1,0 +1,16 @@
+my_dict = {'Alexey': 1989, 'Ekaterina': 1995, 'Sofia': 2019}
+print(my_dict)
+print(my_dict['Ekaterina'])
+print(my_dict.get('Anton', 'нет такого'))
+my_dict.update({'Zinaida': 1968, 'Vasilisa': 1960})
+print(my_dict)
+a = my_dict.pop('Ekaterina')
+print("Удаленный: ", a)
+print(my_dict)
+my_set = {1, 2, 3, 3, 3, 'числа', 'строки', 'числа', True, (1,2,3)}
+print(my_set)
+my_set.add('Ekaterina')
+my_set.add(1995)
+print(my_set)
+my_set.remove(1995)
+print(my_set)

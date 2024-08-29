@@ -17,3 +17,5 @@ print(mutable_list)
 print('межевой план' in mutable_list)
 print('межевой план' not in mutable_list)
 print(mutable_list[0:2:2])
+
+
