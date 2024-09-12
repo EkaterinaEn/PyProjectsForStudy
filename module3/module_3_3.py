@@ -7,19 +7,11 @@ print_params(b = 25)
 print_params(c = [1,2,3])
 
 #2.Распаковка параметров:
-
-def print_params(a, b, c):
-    print(a, b, c)
-
 values_list = [1, 'список', False]
 values_dict = {'a': 2, 'b': 'словарь', 'c': 2}
-
 print_params(*values_list)
 print_params(**values_dict)
 
 #3.Распаковка + отдельные параметры:
-def print_params(a, b, c):
-    print(a, b, c)
-
 values_list_2 = [54.32, 'Строка' ]
 print_params(*values_list_2, 42)
