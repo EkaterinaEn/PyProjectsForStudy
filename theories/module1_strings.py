@@ -1,0 +1,16 @@
+name = 'это моя строка'
+print (name[6])
+print (name[-1])
+print (name[2:4])
+print (name[::-1])
+print (len(name))
+print ('это новая строка ' + 'это моя строка')
+print("==========================================================")
+#my_string = input('Привет, как тебя зовут? ')
+my_string = "Hello"
+print(len(my_string))
+print(my_string.lower())
+print(my_string.upper())
+print(my_string.replace(' ',''))
+print(my_string[0])
+print(my_string[-1])

@@ -1,8 +1,8 @@
 #name = input('Как тебя зовут?')
 #print(f'Здравствуйте, {name}')
-first = 'Вторник'
-second = 'Понедельник'
-print(f'{second}, {first}')
+# first = 'Вторник'
+# second = 'Понедельник'
+# print(f'{second}, {first}')
 # a = 5
 # b = 10
 # c = 10
@@ -31,3 +31,11 @@ print(f'{second}, {first}')
 # # dict1 = dict(zip(students_sort,grades_k))
 # dict1 = {students_sort[0]:grades_k[0], students_sort[1]:grades_k[1]}
 # print(dict1)
+# *args - распаковка(запаковка) позиционных параметров, содержащих один элемент (списки, кортеджи, множества)
+#**kwargs распаковка(запаковка) именнованных параметров, содержащих пару элементов (словари)
+def print_params(**kwargs):
+    print(kwargs)
+
+# list_= [1, 2, 3]
+dict_ = {'a': 1, 'b': 2, 'c': 3}
+print_params(**dict_)
