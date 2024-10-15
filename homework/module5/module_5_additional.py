@@ -4,7 +4,7 @@ class User:
 
     def __init__(self, nickname, password, age):
         self.nickname = nickname
-        self.password = password
+        self.password = hash(password)
         self.age = age
 
     def __str__(self):
@@ -38,7 +38,7 @@ class UrTube:
             if user.nickname == nickname:
                 print(f'Пользователь {nickname} уже существует')
                 return
-        new_user = User(nickname, hash(password), age)
+        new_user = User(nickname, password, age)
         self.users.append(new_user)
         self.current_user = new_user
 
@@ -72,7 +72,7 @@ class UrTube:
                         print('Вам нет 18 лет, пожалуйста покиньте страницу')
                         return
                     for i in range(1, video.duration+1):
-                        print(i)
+                        print(i, end=" ")
                         time.sleep(1)
                     print('Конец видео')
 
