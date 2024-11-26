@@ -23,7 +23,7 @@ class Shop:
             file = open(self.__file_name, 'r')
             file_text = file.read()
             file.close()
-            product_str = (str(product))
+            product_str = str(product)
             if product_str in file_text:
                 print(f'Продукт {product_str} уже есть в магазине')
             else:
@@ -33,10 +33,6 @@ class Shop:
 
 
 if __name__ == "__main__":
-    # print("====")
-    # shop = Shop()
-    # shop.get_products()
-
 
     s1 = Shop()
     p1 = Product('Potato', 50.5, 'Vegetables')
